@@ -10,7 +10,7 @@
     }
     // Check Validate Email
     if(!filter_var(($email), FILTER_VALIDATE_EMAIL)){
-        die("Địa chỉ Email không hợp lệ! Vui lòng nhập lại!<br>Ví dụ: example@gmail.com");
+        die("Địa chỉ Email không hợp lệ!<br>Vui lòng nhập lại!");
     }
     // Check Exist Email
     if($email){
