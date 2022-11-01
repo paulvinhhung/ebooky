@@ -36,7 +36,7 @@
     
     <body>
         <?php
-            require_once 'connectdb.php';
+            require_once 'connect.php';
         ?>
         <div class="signup">
             <p><h1 class="mid">ĐĂNG KÝ TÀI KHOẢN</h1></p>
