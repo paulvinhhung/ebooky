@@ -46,6 +46,10 @@
                     <div class="grid-column__4">
                         <div class="book-info__contain">
                         <?php
+<<<<<<< HEAD
+=======
+                                // $id='01';
+>>>>>>> be78e6095c183ab925272961b0e2e363c2eb46cc
                                 require_once 'connectdb.php';
                                 $id = $_GET['id'];
                                 $sql = "SELECT * FROM ebook Where ID = '$id'";

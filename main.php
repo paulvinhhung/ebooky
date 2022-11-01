@@ -7,6 +7,7 @@
     <title>EBOOKY</title>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
     <div class="website">
         <header class="header">
@@ -18,56 +19,18 @@
                             
                     </div>
                     <div class="header_navbar">
-                            <!-- <ul class="header_navbar_list_item">
+                            <ul class="header_navbar_list_item">
                                 <a href="#" class="header_navbar_account">Trang chủ</a>
                             </ul>
                             <ul class="header_navbar_list_item">
                                 <a href="#" class="header_navbar_account">Review sách</a>
                             </ul>
                                 <ul class="header_navbar_list_item">
-                                <a href="./login.html" class="header_navbar_account">Đăng nhập</a>
+                                <a href="#" class="header_navbar_account">Tài khoản</a>
                             </ul>
                             <ul class="header_navbar_list_item">
-                                <a href="./signup.html" class="header_navbar_account">Đăng ký</a>
-<<<<<<< HEAD
-                            </ul> -->
-                        <?php
-                        ob_start();
-                        session_start();
-                        if(isset($_SESSION["email"])) {
-                            echo'
-                            <ul class="header_navbar_list_item">
-                                <a href="#" class="header_navbar_account">Trang chủ</a>
-=======
->>>>>>> be78e6095c183ab925272961b0e2e363c2eb46cc
+                                <a href="./logout.php" class="header_navbar_account">Đăng xuất</a>
                             </ul>
-                            <ul class="header_navbar_list_item">
-                                <a href="#" class="header_navbar_account">Review sách</a>
-                            </ul>
-                            <ul class="header_navbar_list_item">
-                                <a href="#" class="header_navbar_account">Tên tài khoản người dùng</a>
-                            </ul>
-                            <ul class="header_navbar_list_item">
-                                <a href="logout.php" class="header_navbar_account">Đăng xuất</a>
-                            </ul>';
-                        }
-                        else {
-                        echo '
-                        <ul class="header_navbar_list_item">
-                                <a href="#" class="header_navbar_account">Trang chủ</a>
-                            </ul>
-                        <ul class="header_navbar_list_item">
-                                <a href="#" class="header_navbar_account">Review sách</a>
-                        </ul>
-                        <ul class="header_navbar_list_item">
-                            <a href="./login.html" class="header_navbar_account">Đăng nhập</a>
-                        </ul>
-                        <ul class="header_navbar_list_item">
-                            <a href="./signup.html" class="header_navbar_account">Đăng ký</a>
-                        </ul>
-                        ';
-                        }
-                        ?>
                         </li>
                     </div>
                 </div>
@@ -95,13 +58,13 @@
                                 if(mysqli_num_rows($result) > 0 ){
                                 while($row = mysqli_fetch_assoc($result)){ ?>
                                 <div class="grid-column__2-3">
-                                    <a class="container-book__box" href="./info_book?id=<?php echo $row['ID']?>">
+                                    <a class="container-book__box" href="./info_book.php?id=<?php echo $row['ID']?>">
                                         <div class="container-book__img" style="background-image: url(<?php echo $row['Poster']?>)"></div>
                                         <h4 class="container-book-item__namebook"><?php echo $row['Bookname']?></h4>
                                         <h5 class="container-book-item__nameauthor"><?php echo $row['Author']?></h5>
                                     </a>
                                 </div>
-                                <?php }  }else{
+                            <?php }  }else{
                                 echo "0 result";} 
                             ?>
                         </div>
@@ -109,6 +72,6 @@
                 </div>
             </div>
         </div>
-    </div>   
+    </div>
 </body>
 </html>
