@@ -95,7 +95,16 @@
                                 if(mysqli_num_rows($result) > 0 ){
                                 while($row = mysqli_fetch_assoc($result)){ ?>
                                 <div class="grid-column__2-3">
-                                    <a class="container-book__box" href="./info_book?id=<?php echo $row['ID']?>">
+                                    <a class="container-book__box" href="
+                                    <?php
+                                        if(isset($_SESSION["email"])) {
+                                            echo './info_book?id='.$row['ID'];
+                                        }
+                                        else{
+                                            echo "./message.php";
+                                        }
+                                    ?>
+                                    ">
                                         <div class="container-book__img" style="background-image: url(<?php echo $row['Poster']?>)"></div>
                                         <h4 class="container-book-item__namebook"><?php echo $row['Bookname']?></h4>
                                         <h5 class="container-book-item__nameauthor"><?php echo $row['Author']?></h5>
