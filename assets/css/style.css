@@ -17,11 +17,10 @@ html {
 .signup {
     width: 400px;
     min-height: 100px;
-    padding: 32px 24px;
+    padding: 24px 24px;
     text-align: center;
     background: #fff;
     border-radius: 2px;
-    margin: 24px;
     align-self: center;
     box-shadow: 0 2px 5px 0 rgba(51,62,73,.1);
     border-radius: 10px;
@@ -80,20 +79,29 @@ html {
     border-color: #1dbfaf;
 }
 
-.form-group.invalid .form-control {
+.error .form-control {
     border-color: #f33a58;
 }
 
-.form-group.invalid .form-message {
+.error .form-message {
     color: #f33a58;
+    visibility: visible;
+}
+
+.success .form-control {
+    border-color: #1dbfaf;
+}
+
+.success .form-message {
+    color: #1dbfaf;
 }
 
 .form-message {
     font-size: 1.2rem;
     line-height: 1.6rem;
     padding: 4px 0 0;
+    visibility: hidden;
 }
-
 .form-submit {
     outline: none;
     background-color: #FFEA00;

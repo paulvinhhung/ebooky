@@ -4,6 +4,7 @@
     $pwd = $_POST['password'];
     $phonenumber = $_POST['phonenumber'];
     $dateofbirth = $_POST['dateofbirth'];
+    
     // Check Empty Email
     if(empty($email)){
         die("Vui lòng nhập Email!");
