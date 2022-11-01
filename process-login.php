@@ -16,7 +16,7 @@
     //thực thi truy vấn
     $result = mysqli_query($conn, $sql);
     if(!mysqli_num_rows($result)){
-        echo "Sai email";
+        echo "Email này chưa được đăng ký!";
         //exit;
     } else {
         $sqlp = "SELECT * FROM information WHERE pwd = '$pwd'";
@@ -25,7 +25,7 @@
         //thực thi truy vấn
         $resultp = mysqli_query($conn, $sqlp);
         if(!mysqli_num_rows($resultp)){
-            echo "Sai mật khẩu";
+            echo "Sai mật khẩu! Vui lòng nhập lại!";
         } else {
             echo "Đăng nhập thành công";
             if(isset($_POST['remember']) == "yes"){

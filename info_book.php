@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xemphimhd</title>
-    <link rel="stylesheet" href="info.css">
+    <title>Chi tiết sách</title>
+    <link rel="stylesheet" href="./assets/css/infobook-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="themify-icons.css">
     <link href=”https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css” rel=”stylesheet”/>
@@ -16,7 +16,7 @@
             <div class="grid">
                 <div class="header-contain">
                     <div class="header_logo">
-                        <h2>EBOOKY</h2>
+                        <h1>EBOOKY</h1>
                         <li class="header_navbar_list">
                             
                     </div>
@@ -46,7 +46,8 @@
                     <div class="grid-column__4">
                         <div class="book-info__contain">
                         <?php
-                                require_once "connectdb.php";
+                                // $id='01';
+                                require_once 'connectdb.php';
                                 $id = $_GET['id'];
                                 $sql = "SELECT * FROM ebook Where ID = '$id'";
                                 $result = mysqli_query($conn, $sql);
@@ -54,7 +55,7 @@
                         ?>
                                 <img src="<?php echo $row['Poster']?>" class="book_info--poster">
                         </div>
-                        <button class="click-bttn">Đọc ngay</button> 
+                        <button class="click-bttn">Đọc ngay</button>
                     </div>
                     <div class="grid-column__8">
                          <div class="book-info__contain">
@@ -68,11 +69,6 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="footer-content">
-                         
-            </div>
-        </footer>
     </div>
 </body>
 </html>

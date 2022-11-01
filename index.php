@@ -13,7 +13,7 @@
             <div class="grid">
                 <div class="header-contain">
                     <div class="header_logo">
-                        <h2>EBOOKY</h2>
+                        <h1>EBOOKY</h1>
                         <li class="header_navbar_list">
                             
                     </div>
@@ -25,10 +25,10 @@
                                 <a href="#" class="header_navbar_account">Review sách</a>
                             </ul>
                                 <ul class="header_navbar_list_item">
-                                <a href="#" class="header_navbar_account">Đăng nhập</a>
+                                <a href="./login.html" class="header_navbar_account">Đăng nhập</a>
                             </ul>
                             <ul class="header_navbar_list_item">
-                                <a href="#" class="header_navbar_account">Đăng ký</a>
+                                <a href="./signup.html" class="header_navbar_account">Đăng ký</a>
                             </ul>
                         </li>
                     </div>
@@ -51,7 +51,7 @@
                     <div class="grid-column__10">
                         <div class="grid-row">
                             <?php 
-                                require_once "config.php";
+                                require_once 'connectdb.php';
                                 $sql = "SELECT * FROM ebook";
                                 $result = mysqli_query($conn, $sql);
                                 if(mysqli_num_rows($result) > 0 ){
@@ -66,24 +66,11 @@
                                 <?php }  }else{
                                 echo "0 result";} 
                             ?>
-
-
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div>
-        <footer class="footer">
-            <h3>Mọi thắc mắc xin vui lòng liên hệ:</h3>
-            <h4>Chuyên viên tư vấn: Mrs Hạnh hông cute</h4>
-            <h4>📞Hotline:0909.056.324</h4>
-            <h4>Hoặc liên hệ trước tiếp với sếp lớn của chúng tôi nhé!</h4>
-            <a href="https://www.facebook.com/myousernam3">Minh Chiết</a>
-        </footer>
-        </div> -->
-    </div>
-    
+    </div>   
 </body>
 </html>
