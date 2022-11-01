@@ -17,7 +17,7 @@
     if($email){
         $sql = "SELECT email FROM information WHERE email = '$email'";
         $result = mysqli_query($conn, $sql);
-        if(mysqli_num_rows($result) > 0){
+        if(mysqli_num_rows($result)){
             die("Địa chỉ Email đã tồn tại!<br>Vui lòng nhập lại địa chỉ Email!");
         }
         // mysqli_close($conn);
@@ -52,7 +52,7 @@
     $result = mysqli_query($conn, $sql);
 
     if ($result > 0){
-        header("Location: signup-success.html");
+        header("Location: ./signup-success.html");
     }
     mysqli_close($conn);
 ?>

@@ -7,6 +7,7 @@
     <title>EBOOKY</title>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
     <div class="website">
         <header class="header">

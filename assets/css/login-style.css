@@ -14,7 +14,7 @@ html {
     display: flex;
     justify-content: center;
 }
-.signup {
+.login {
     width: 400px;
     min-height: 100px;
     padding: 24px 24px;
@@ -25,28 +25,23 @@ html {
     box-shadow: 0 2px 5px 0 rgba(51,62,73,.1);
     border-radius: 10px;
 }
-.signup .heading {
+.login .heading {
     font-size: 3rem;
     margin-bottom: 32px;
 }
-.signup .desc {
-    text-align: center;
-    color: #000;
-    font-size: 1.6rem;
-    font-weight: lighter;
-    line-height: 2.4rem;
-    margin-top: 16px;
-    font-weight: 300;
+.login .question {
+    line-height: 1.8rem;
+    font-size: 1.4rem;
 }
-.signup a {
+.login a {
     text-decoration: none;
     color: #000;
     background-color: #FFEA00;
-    padding: 4px 8px;
+    padding: 2px 8px;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
-.signup a:hover {
+.login a:hover {
     opacity: .8;
 }
 .form-group {
@@ -54,19 +49,19 @@ html {
     margin-bottom: 16px;
     flex-direction: column;
 }
-
-.form-label,
-.form-message {
+.form-label{
     text-align: left;
-}
-
-.form-label {
     font-weight: 700;
     padding-bottom: 6px;
     line-height: 1.8rem;
     font-size: 1.4rem;
 }
-
+.remember {
+    text-align: left;
+    padding-bottom: 20px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
 .form-control {
     height: 40px;
     padding: 8px 12px;
@@ -75,33 +70,8 @@ html {
     outline: none;
     font-size: 1.4rem;
 }
-
 .form-control:hover {
     border-color: #1dbfaf;
-}
-
-.error .form-control {
-    border-color: #f33a58;
-}
-
-.error .form-message {
-    color: #f33a58;
-    visibility: visible;
-}
-
-.success .form-control {
-    border-color: #1dbfaf;
-}
-
-.success .form-message {
-    color: #1dbfaf;
-}
-
-.form-message {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    padding: 4px 0 0;
-    visibility: hidden;
 }
 .form-submit {
     outline: none;
@@ -116,8 +86,47 @@ html {
     border-radius: 8px;
     cursor: pointer;
 }
-
 .form-submit:hover {
     background-color: #FFEA00;
     opacity: .8;
 }
+
+
+/* form{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.remember{
+    margin-left: -80px;
+    font-size: 14px;
+}
+.form-group label{
+    margin-left: -140px;
+}
+.form-control{
+    margin: 5px 0px;
+}
+.btn-btn-primary{
+    margin-top: 10px;
+}
+p{
+    margin-left: 10px;
+}
+.form-group{
+    font-family: 'Open Sans', sans-serif;
+}
+input[type="text"] {
+    width: 200px;
+} 
+input[type="password"] {
+    width: 200px;
+}          
+input[type="submit"] {
+    width: 100px;
+}
+.main{
+    border:solid ;
+    max-width: 500px;
+    justify-content: center;
+    
+} */
