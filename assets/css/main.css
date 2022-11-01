@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* BASE */
+*{
+    margin: 0px;
+}
+
+html {
+    background-color: #d7dddf;
+}
+
+.grid{
+    width:1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-row{
+    margin-left: -5px;
+    margin-right: -60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-column__10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 81.3333%;
+}
+
+.grid-column__2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid-column__2-3{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 26.77756%;
+}
+
+
+body{
+    font-family: 'Open Sans','sans-serif';
+    font-size: 14px;
+    color: #111;
+    line-height: 1.15;
+}
+h2{
+    font-size: 20px;
+    color: #111;
+    
+}
+h3{
+    font-size: 15px;
+    color: #111;
+}
+h4{
+    font-size: 13px;
+    color: #111;
+}
+
+
+/* HEADER */ 
+.header{
+    display: flex;
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 4;
+    border-bottom: 1px solid #f8f8f9;
+    border-bottom: 1px solid #f8f8f9;
+    box-shadow: 3px 1px 10px #cccc;
+    }
+
+.header-contain{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header_navbar_account{
+    display: block;
+}
+
+.header_logo{
+    color: black;
+}
+
+
+
+.header_navbar_list{
+    list-style: none;
+}
+
+.header_navbar_list_item{
+    display: inline-block;
+    color: black;
+}
+
+.header_navbar_list_item a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.header_navbar_account:hover{
+    color:#00BAFF;
+    cursor: pointer;
+}
+
+
+/* BODY */
+.container {
+    margin-top: 80px;
+    background-color: #d7dddf;
+    margin-bottom: 80px;
+
+}
+
+.cotainer-navbar-menu{
+    margin-top: 40px;
+    margin-bottom: 30PX;
+    background-color: #08090b;
+    opacity: 50%;
+    border-radius: 5px;
+    padding: 10px;
+    height: 18%;
+    
+}
+
+.cotainer-navbar-menu__header{
+    padding: 10px;
+    border-bottom: 1px solid whitesmoke;
+    color: #f8f8f9;
+
+}
+
+.container-navbar-menu__list{
+    list-style: none;
+    color: #f8f8f9;
+}
+
+.container-navbar-menu__item{
+    margin: 25px 0px;
+    transition: transform linear 0.3s;
+    right: 0px;
+    will-change: transform;
+    cursor: pointer;
+}
+
+.container-navbar-menu__item:hover{
+    color: #FFEA00;
+    transform: translateX(13px);
+    font-size: 20px;
+}
+
+.container-book__box{
+    margin-top: 40px;
+    background-color: #f1f1f1;
+    display: block;
+    background-color: #fff;
+    margin: 15px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0 #888888;
+    border: 1px solid #888888;
+    height: 95%;
+    transition: transform ease-in 0.1s;
+    will-change: transform;
+    z-index: -40;
+    text-decoration:none;
+}
+.container-book__box:hover{
+    transform: translateY(-10px);
+}
+
+.container-book__img{
+    padding-top: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 80px;
+}
+
+.container-book-info{
+    list-style: none;
+}
+.container-book-item__namebook{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #00baff;
+    text-decoration: solid;
+}
+.container-book-item__nameauthor{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    color: #1f262f ;
+    padding: 5px
+}
+.container-book-item__datepublish{
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    font-size: 11px;
+    padding: 5px;
+}
+.container-book-item__quotes{
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    font-size: 11px;
+    padding: 5px;
+}
+
+ /* FOOTER */
+
+ .footer{
+    height: 50px;
+    opacity: 20%;
+    background-color: #00baff;
+    background-size: cover;
+    box-shadow: 10px 0px 0px  #888888;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
