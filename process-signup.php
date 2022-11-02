@@ -14,7 +14,7 @@
         if(mysqli_num_rows($result)>0){
             $message = "Địa chỉ Email đã tồn tại! Vui lòng nhập lại địa chỉ Email!";
             echo "<script type='text/javascript'>alert('$message');
-                    window.location.href='./signup.php'</script>";
+                    window.location.href='./signup.html'</script>";
             exit;
         }
     }

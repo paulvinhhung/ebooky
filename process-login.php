@@ -19,8 +19,10 @@
     //thực thi truy vấn
     $result = mysqli_query($conn, $sql);
     if(!mysqli_num_rows($result)){
-        echo "Email này chưa được đăng ký!";
-        //exit;
+        $message = "Email này chưa được đăng ký!";
+            echo "<script type='text/javascript'>alert('$message');
+                    window.location.href='./login.html'</script>";
+            exit;
     } else {
         $sqlp = "SELECT * FROM information WHERE pwd = '$pwd'";
         //echo $sql; exit;
@@ -28,7 +30,10 @@
         //thực thi truy vấn
         $resultp = mysqli_query($conn, $sqlp);
         if(!mysqli_num_rows($resultp)){
-            echo "Sai mật khẩu! Vui lòng nhập lại!";
+            $message = "Sai mật khẩu! Vui lòng nhập lại!";
+            echo "<script type='text/javascript'>alert('$message');
+                    window.location.href='./login.html'</script>";
+            exit;
         } else {
 
             echo "Đăng nhập thành công";
