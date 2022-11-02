@@ -4,13 +4,12 @@
         <meta charset="UTF-8" />
         <title>Đăng ký tài khoản</title>
         <link rel="stylesheet" href="./assets/css/style.css">
-        <!-- <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script> -->
 
         
     </head>    
     <body>
         <div class="main">
-            <form action="process-signup.php" method="post" id="signup" class="signup" novalidate>
+            <form action="process-signup.php" onsubmit="return checkInputs();" onsubmit="return checkEmailExist();" method="post" id="signup" class="signup" novalidate>
                 <p><h1 class="heading">ĐĂNG KÝ TÀI KHOẢN</h1></p>
                 <div class="form-group">
                     <label for="email" class="form-label">Email</label>
@@ -37,25 +36,8 @@
                 </div>
             </form>
         </div>
-        <!-- <script src="./assets/js/main.js"></script> -->
 
-
-        <!-- <script src="./assets/js/validator.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function(){
-                Validator({
-                    form: '#signup',
-                    rules: [
-                        // Validator.isRequired('#email'),
-                        Validator.isEmail('#email'),
-                        Validator.minLength('#password', 6),
-                    ]
-                });
-
-            });
-
-
-        </script> -->
-
+        <script src="./assets/js/main.js"></script>
+        
     </body>
 </html>

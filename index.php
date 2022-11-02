@@ -38,8 +38,6 @@
                             echo'
                             <ul class="header_navbar_list_item">
                                 <a href="#" class="header_navbar_account">Trang chủ</a>
-=======
->>>>>>> be78e6095c183ab925272961b0e2e363c2eb46cc
                             </ul>
                             <ul class="header_navbar_list_item">
                                 <a href="#" class="header_navbar_account">Review sách</a>

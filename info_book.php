@@ -22,13 +22,13 @@
                     </div>
                     <div class="header_navbar">
                             <ul class="header_navbar_list_item">
-                                <a href="#" class="header_navbar_account">Trang chủ</a>
+                                <a href="./index.php" class="header_navbar_account">Trang chủ</a>
                             </ul>
                             <ul class="header_navbar_list_item">
                                 <a href="#" class="header_navbar_account">Review sách</a>
                             </ul>
                                 <ul class="header_navbar_list_item">
-                                <a href="#" class="header_navbar_account">#Tên tài khoản người dùng</a>
+                                <a href="#" class="header_navbar_account">Tên tài khoản người dùng</a>
                             </ul>
                             <ul class="header_navbar_list_item">
                                 <a href="./logout.php" class="header_navbar_account">Đăng xuất</a>
@@ -46,10 +46,6 @@
                     <div class="grid-column__4">
                         <div class="book-info__contain">
                         <?php
-<<<<<<< HEAD
-=======
-                                // $id='01';
->>>>>>> be78e6095c183ab925272961b0e2e363c2eb46cc
                                 require_once 'connectdb.php';
                                 $id = $_GET['id'];
                                 $sql = "SELECT * FROM ebook Where ID = '$id'";
