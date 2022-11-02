@@ -21,7 +21,7 @@
     if(!mysqli_num_rows($result)){
         $message = "Email này chưa được đăng ký!";
             echo "<script type='text/javascript'>alert('$message');
-                    window.location.href='./login.html'</script>";
+                    window.location.href='./login.php'</script>";
             exit;
     } else {
         $sqlp = "SELECT * FROM information WHERE pwd = '$pwd'";
@@ -32,7 +32,7 @@
         if(!mysqli_num_rows($resultp)){
             $message = "Sai mật khẩu! Vui lòng nhập lại!";
             echo "<script type='text/javascript'>alert('$message');
-                    window.location.href='./login.html'</script>";
+                    window.location.href='./login.php'</script>";
             exit;
         } else {
 

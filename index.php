@@ -25,7 +25,7 @@
                                 <a href="#" class="header_navbar_account">Review sách</a>
                             </ul>
                                 <ul class="header_navbar_list_item">
-                                <a href="./login.html" class="header_navbar_account">Đăng nhập</a>
+                                <a href="./login.php" class="header_navbar_account">Đăng nhập</a>
                             </ul>
                             <ul class="header_navbar_list_item">
                                 <a href="./signup.html" class="header_navbar_account">Đăng ký</a>
@@ -58,7 +58,7 @@
                                 <a href="#" class="header_navbar_account">Review sách</a>
                         </ul>
                         <ul class="header_navbar_list_item">
-                            <a href="./login.html" class="header_navbar_account">Đăng nhập</a>
+                            <a href="./login.php" class="header_navbar_account">Đăng nhập</a>
                         </ul>
                         <ul class="header_navbar_list_item">
                             <a href="./signup.html" class="header_navbar_account">Đăng ký</a>
@@ -96,7 +96,7 @@
                                     <a class="container-book__box" href="
                                     <?php
                                         if(isset($_SESSION["email"])) {
-                                            echo './info_book?id='.$row['ID'];
+                                            echo './info_book.php?id='.$row['ID'];
                                         }
                                         else{
                                             echo "./message.php";
