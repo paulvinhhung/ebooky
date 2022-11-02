@@ -13,12 +13,12 @@
                 
                 <div class="form-group">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="VD: example@domain.com" required> <br>
+                    <input type="email" class="form-control" name="email" id="email" value="<?php if(isset($_COOKIE['email'])) echo $_COOKIE['email'];?>" placeholder="VD: example@domain.com" required> <br>
                 </div>
 
                 <div class="form-group">
                     <label for="password" class="form-label">Mật khẩu</label>
-                    <input type="password" class="form-control" name="pwd" id="pwd" placeholder="Nhập mật khẩu" required> <br>
+                    <input type="password" class="form-control" name="pwd" id="pwd" value="<?php if(isset($_COOKIE['pwd'])){echo $_COOKIE['pwd'];}?>" placeholder="Nhập mật khẩu" required> <br>
                 </div>
 
                 <div class="remember">

@@ -40,6 +40,7 @@
             $_SESSION['email'] = $_POST["email"];
             if(isset($_POST['remember']) == "yes"){
                 setcookie("email", $email, time() + (3600 * 30), "/");
+                setcookie("pwd", $p, time() + (3600 * 30), "/");
             }
             header("Location: ./index.php");
         }
